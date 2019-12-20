@@ -59,8 +59,8 @@ namespace Meme_Collector
                         var directory = Directory.GetCurrentDirectory() + @"\Memes\";
                         var path = Path.Combine(directory);
                         string filename = Regex.Match(url, @"\/([A-Za-z0-9\-._~:?#\[\]@!$%&'()*+,;=]*)(.jpg|.JPG|.jpeg|.JPEG|.png|.PNG)").Groups[1].Value + ".png";
-                        if (filename is "") continue;
-                        Console.WriteLine($"Saving file: {filename}");
+                        if (filename == ".png" || filename is null) continue;
+                        
                         SaveStreamAsFile(path, stream, filename);
                     }
                 }
@@ -80,6 +80,7 @@ namespace Meme_Collector
             using (FileStream outputFileStream = new FileStream(path, FileMode.Create))
             {
                 inputStream.CopyTo(outputFileStream);
+                Console.WriteLine($"Saved file: {fileName} | Total memes saved: {Directory.GetFiles(filePath).Length}");
             }
         }
     }
