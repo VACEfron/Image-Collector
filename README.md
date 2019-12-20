@@ -2,7 +2,7 @@
 This program uses Reddit to get memes from multiple random meme subreddits and saves them to a local folder for you to use. Basically the perfect tool for lazy idiots like me. Enjoy the memes! 
 
 ## Requirements
-* None
+* Propably a computer or something
 
 ##  How to run
 1. Download the files
