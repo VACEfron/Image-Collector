@@ -35,13 +35,21 @@ namespace Meme_Collector
                         "bruhmoment",
                         "historymemes",
                         "expanddong",
-                        "okbuddyretard"
+                        "okbuddyretard",
+                        "blackpeopletwitter",
+                        "2meirl4meirl",
+                        "terriblefacebookmemes",
+                        "comedycemetery",
+                        "comedyheaven"
                     };
                     var Subname = SubNames[r.Next(SubNames.Length)];
                     string[] random = {
                     $"https://www.reddit.com/r/{Subname}/new.json",
                     $"https://www.reddit.com/r/{Subname}/rising.json",
-                    $"https://www.reddit.com/r/{Subname}/top/.json?t=day" };
+                    $"https://www.reddit.com/r/{Subname}/top/.json?t=day",
+                    $"https://www.reddit.com/r/{Subname}/top/.json?t=week",
+                    $"https://www.reddit.com/r/{Subname}/new.json",
+                    };
 
                     var request = (HttpWebRequest)WebRequest.Create(random[r.Next(random.Length)]);
                     var response = (HttpWebResponse)request.GetResponse();
