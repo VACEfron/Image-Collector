@@ -11,7 +11,7 @@ This program uses Reddit to get memes from multiple random meme subreddits and s
 2. Open the 'Meme Collector' folder and run the 'Meme Collector.exe'
 3. Type 'start' and enjoy free memes! 
 
-##  This repository:  
+##  This repository contains:  
 * An application that saves random memes to a local folder.
 
 ## Need help?  
