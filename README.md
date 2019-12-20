@@ -1,6 +1,8 @@
 # 🧲 Meme Collector
 This program uses Reddit to get memes from multiple random meme subreddits and saves them to a local folder for you to use. Basically the perfect tool for lazy idiots like me. Enjoy the memes! 
 
+![Kanna](https://i.pinimg.com/originals/00/1c/9a/001c9a146ce0384c0e3114674051fefb.gif)
+
 ## Requirements
 * Probably a computer or something
 
@@ -14,5 +16,3 @@ This program uses Reddit to get memes from multiple random meme subreddits and s
 
 ## Need help?  
 To ask any questions or leave a comment about anything, please join [my Discord server](https://discord.gg/TtR32WT).  
-
-![Kanna](https://i.pinimg.com/originals/00/1c/9a/001c9a146ce0384c0e3114674051fefb.gif)
