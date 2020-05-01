@@ -5,6 +5,7 @@ This program uses Reddit to get memes from multiple random meme subreddits and s
 
 ## Requirements
 * Probably a computer or something
+* An internet connection
 
 ##  How to run
 1. Download the files
