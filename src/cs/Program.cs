@@ -13,7 +13,7 @@ namespace Image_Collector
             Console.WriteLine(
                 ">> Image Collector by VAC Efron\n" +
                 "Automatically save Images from various Reddit communities.\n\n" +
-                "Disclaimer: Reddit proves a limited amount of posts, meaning that eventually there will be no more memes to save. You'll have to wait until new posts appear on the subreddits.\n\n" +
+                "Disclaimer: Reddit proves a limited amount of posts, meaning that eventually there will be no more images to save. You'll have to wait until new posts appear on the subreddits.\n\n" +
                 ">> Discord: https://discord.gg/TtR32WT");
         Read:
             Console.WriteLine($"\nChoose a category:\n{ChooseCategory}");
