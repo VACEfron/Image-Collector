@@ -37,7 +37,7 @@ namespace Image_Collector
                     var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
                     var data = (JObject)JsonConvert.DeserializeObject(responseString);
                     int postscount = data["data"]["dist"].Value<int>();
-                    if (postscount is 0) continue;
+                    if (postscount == 0) continue;
                     string url = data["data"]["children"][r.Next(0, postscount)]["data"]["url"].Value<string>();
 
                     using (var WebClient = new WebClient())
@@ -46,8 +46,14 @@ namespace Image_Collector
                         var stream = new MemoryStream(Byte);
                         var path = Directory.GetCurrentDirectory() + $@"\{Type}\";
 
-                        string filename = Regex.Match(url, @"\/([A-Za-z0-9\-._~:?#\[\]@!$%&'()*+,;=]*)(.jpg|.JPG|.jpeg|.JPEG|.png|.PNG)").Groups[1].Value + ".png";
-                        if (filename == ".png" || filename is null) continue;
+                        bool correctFileType = Regex.Match(url, @"^.*\.(png|jpg|jpeg|gif|GIF|mp4)$").Success;
+
+                        if (!correctFileType) continue;
+                        if (correctFileType && !Regex.Match(url, @"gyphy\.com|imgur\.com|reddit\.com|redd\.it$").Success) continue;
+
+                        var filename = Regex.Match(url, @"(?:[^/][\d\w\.]+)$").Value;
+                        
+                        if (filename is null) continue;
                         
                         SaveStreamAsFile(path, stream, filename);
                     }

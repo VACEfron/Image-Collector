@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aLrZfHyVH6U6VW2/2EdhZI63fkSVkfxWa4zArxYU3QYWov2Qn9FGWcrZWC8rIxIpzeCMPsKXSarkv3TPAhKHwg==",
+  "dgSpecHash": "jEoP8OdMrut8cMwuiDbJ48VyOXwdS74pfVdLqqUXQ0KlmrdU+Yy6hfp4UFOcIHaQEnNIdSO66C4xrP+2VStj6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hayk\\Documents\\GitHub\\Meme-Collector\\src\\Image Collector.csproj",
+  "projectFilePath": "C:\\Users\\Hayk\\Desktop\\Image-Collector\\src\\Image Collector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hayk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

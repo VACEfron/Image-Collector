@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hayk\\Documents\\GitHub\\Meme-Collector\\src\\Image Collector.csproj",
+      "projectUniqueName": "C:\\Users\\Hayk\\Desktop\\Image-Collector\\src\\Image Collector.csproj",
       "projectName": "Image Collector",
-      "projectPath": "C:\\Users\\Hayk\\Documents\\GitHub\\Meme-Collector\\src\\Image Collector.csproj",
+      "projectPath": "C:\\Users\\Hayk\\Desktop\\Image-Collector\\src\\Image Collector.csproj",
       "packagesPath": "C:\\Users\\Hayk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hayk\\Documents\\GitHub\\Meme-Collector\\src\\obj\\",
+      "outputPath": "C:\\Users\\Hayk\\Desktop\\Image-Collector\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
