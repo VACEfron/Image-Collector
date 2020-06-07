@@ -47,9 +47,9 @@ namespace Image_Collector
                         var path = Directory.GetCurrentDirectory() + $@"\{Type}\";
 
                         bool correctFileType = Regex.Match(url, @"^.*\.(png|jpg|jpeg|gif|GIF|mp4)$").Success;
-
                         if (!correctFileType) continue;
-                        if (correctFileType && !Regex.Match(url, @"gyphy\.com|imgur\.com|reddit\.com|redd\.it$").Success) continue;
+
+                        if (!Regex.Match(url, @"(https?:\/\/(.+?\.)?(gyphy\.com|imgur\.com|reddit\.com|redd\.it)(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?)").Success) continue;
 
                         var filename = Regex.Match(url, @"(?:[^/][\d\w\.]+)$").Value;
                         
@@ -74,7 +74,7 @@ namespace Image_Collector
             using (FileStream outputFileStream = new FileStream(path, FileMode.Create))
             {
                 inputStream.CopyTo(outputFileStream);
-                Console.WriteLine($"Saved file: {fileName} | Total images saved: {Directory.GetFiles(filePath).Length}");
+                Console.WriteLine($"Saved file: {fileName} | Total files saved: {Directory.GetFiles(filePath).Length}");
             }
         }
     }
