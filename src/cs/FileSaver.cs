@@ -26,7 +26,7 @@ namespace Image_Collector
                     Task.Delay(TimeSpan.FromSeconds(1));
                     Random r = new Random();
 
-                    string[] SubSections = { "new.json", "rising.json", "top/.json?t=day", "top/.json?t=week", "top/.json?t=month" };
+                    string[] SubSections = { "new.json?limit=1000", "rising.json?limit=1000", "top/.json?t=day&limit=1000", "top/.json?t=week&limit=1000", "top/.json?t=month&limit=1000" };
                     var Subname = Subreddits[r.Next(Subreddits.Length)];
                     var SubSection = SubSections[r.Next(SubSections.Length)];
 

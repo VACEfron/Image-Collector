@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KG+6BueUkqKoyOCObOj/c8grELN3U9w0qgqGicjTN10ooTw7KAasBMmyudEhgzBvZwlOwZwTx3SMICqd3GQABw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hayk\\Documents\\GitHub\\Image-Collector\\src\\Image Collector.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hayk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
