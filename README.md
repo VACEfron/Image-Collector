@@ -18,4 +18,4 @@ This program uses Reddit to get images from multiple subreddits and saves them t
 * The source code for this application.
 
 ## Need help?  
-To ask any questions or leave a comment about anything, please join [my Discord server](https://discord.gg/TtR32WT).  
+To ask any questions or leave a comment about anything, please join [my Discord server](https://discord.gg/xJ2HRxZ).  
