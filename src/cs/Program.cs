@@ -9,6 +9,8 @@ namespace Image_Collector
         static void Main()
             => MainAsync().GetAwaiter().GetResult();
 
+        public static bool shouldContinue = true;
+
         static async Task MainAsync()
         {
             string[] categories = { "memes", "cats", "dogs", "birds", "battlestations" };
@@ -28,13 +30,15 @@ namespace Image_Collector
             {
                 bool firstTime = true;
                 Console.Clear();
-                while (true)
+                while (shouldContinue)
                 {
                     await FileSaver.SaveFile(char.ToUpper(read[0]) + read.Substring(1), firstTime);
                     firstTime = false;
                 }
             }
             else goto Read;
+
+            Console.ReadLine();
         }
     }
 }

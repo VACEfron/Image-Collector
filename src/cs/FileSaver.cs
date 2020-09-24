@@ -60,7 +60,15 @@ namespace Image_Collector
                     catch { continue; }
                 }
             }
-            catch(Exception e) { Console.WriteLine(e); return; }            
+            catch(Exception e)
+            { 
+                if (e is FileNotFoundException)
+                {
+                    Console.WriteLine(">> subreddits.json could not be found...");
+                    Program.shouldContinue = false;
+                }
+                return; 
+            }            
         }
 
         public static void SaveStreamAsFile(string filePath, Stream inputStream, string fileName)
